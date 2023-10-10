@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px;
+  padding: 48px 0;
+}
+
+h6 {
+  color: #9ca3af;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.socialicon {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
