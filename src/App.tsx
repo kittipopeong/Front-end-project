@@ -1,22 +1,20 @@
 import "./App.css";
 import Navbar from "./component/Navbar";
-import Banner from "./component/Banner";
-import Learn from "./component/Learn";
 import Footer from "./component/Footer";
-import useContents from "./Hooks/useContents";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/home";
+import PostDetail from "./Pages/PostDetail";
+import Login from "./Pages/Login";
 
 function App() {
-  const { posts } = useContents();
   return (
     <div className="App">
       <Navbar />
-      <Banner />
-      <div className="feed-container">
-        {posts &&
-          posts.map((learn) => {
-            return <Learn key={learn.id} content={learn} />;
-          })}
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/learn/:id" element={<PostDetail />} />
+      </Routes>
       <Footer />
     </div>
   );
