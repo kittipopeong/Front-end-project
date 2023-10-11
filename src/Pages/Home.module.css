@@ -1,0 +1,9 @@
+.feedContainer {
+  padding: 24px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  max-width: 1232px;
+  width: 100%;
+  margin: auto;
+}

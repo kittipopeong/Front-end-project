@@ -8,13 +8,45 @@
   box-sizing: border-box;
 }
 
-.LinkBottom {
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.active {
+  color: #4f46e5;
+  font-weight: 500;
+  padding-left: 32px;
+  text-decoration: none;
+}
+
+.inactive {
+  text-decoration: none;
+  color: #6b7280;
+  padding-left: 32px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.inactiveLinkBottom {
   background: none;
   border: none;
   color: #6b7280;
   font-size: 16px;
   margin-right: 32px;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.LinkBottom {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  font-size: 16px;
+  margin-right: 32px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .LinkBottom:hover {
